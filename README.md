@@ -1,4 +1,4 @@
-# log-analyzer  ![Java CI with Maven](https://github.com/donmelaka/log-analyzer/workflows/Java%20CI%20with%20Maven/badge.svg)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# log-analyzer  ![Java CI with Maven](https://github.com/donmelaka/log-analyzer/workflows/Java%20CI%20with%20Maven/badge.svg)
 This project reads and analyzes a given log file in [Common Log Format](https://en.wikipedia.org/wiki/Common_Log_Format).
 As the result of the analysis it outputs following information. 
 
