@@ -67,4 +67,14 @@ public class AppTest implements TestDataLoadable {
                         3,
                         3));
     }
+
+    @Test
+    @DisplayName("Test when give path is a directory")
+    void testWhenPathIsADirectory() {
+        final var app = new App();
+        assertThrows(FileNotFoundException.class,
+                () -> app.analyzeLogFile(System.getProperty("user.dir"),
+                        3,
+                        3));
+    }
 }

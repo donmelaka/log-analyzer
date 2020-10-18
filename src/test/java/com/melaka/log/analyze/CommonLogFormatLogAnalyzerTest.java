@@ -146,4 +146,18 @@ class CommonLogFormatLogAnalyzerTest implements TestDataLoadable {
         assertEquals("[]", results.getMostActiveIPs().toString());
     }
 
+    @Test
+    @DisplayName("Test analyzeLine with empty line")
+    void testAnalyzeLineWithEmptyIP() {
+        final var logAnalyzer = new CommonLogFormatLogAnalyzer();
+
+        logAnalyzer.analyzeLine("");
+
+        final Result result = logAnalyzer.getResults(1, 1);
+
+        assertEquals(0, result.getNumberOfUniqueIPs());
+        assertEquals("[]", result.getMostVisitedURLs().toString());
+        assertEquals("[]", result.getMostActiveIPs().toString());
+    }
+
 }

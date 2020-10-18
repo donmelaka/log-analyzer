@@ -8,10 +8,10 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 @Slf4j
-public class ConsoleApp {
+public class LogAnalyzerApp {
 
     public static void main(String[] args) {
-        final var consoleApp = new ConsoleApp();
+        final var consoleApp = new LogAnalyzerApp();
 
         consoleApp.start();
     }
